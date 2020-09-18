@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/REACT-Drag-Drop-Drawer/static/css/main.13ea0245.chunk.css",
+    "main.js": "/REACT-Drag-Drop-Drawer/static/js/main.98d91da6.chunk.js",
+    "main.js.map": "/REACT-Drag-Drop-Drawer/static/js/main.98d91da6.chunk.js.map",
+    "runtime-main.js": "/REACT-Drag-Drop-Drawer/static/js/runtime-main.3bc17e4d.js",
+    "runtime-main.js.map": "/REACT-Drag-Drop-Drawer/static/js/runtime-main.3bc17e4d.js.map",
+    "static/js/2.da997c78.chunk.js": "/REACT-Drag-Drop-Drawer/static/js/2.da997c78.chunk.js",
+    "static/js/2.da997c78.chunk.js.map": "/REACT-Drag-Drop-Drawer/static/js/2.da997c78.chunk.js.map",
+    "index.html": "/REACT-Drag-Drop-Drawer/index.html",
+    "precache-manifest.98e4ff5bd6ba67d9c545a9421c0088e6.js": "/REACT-Drag-Drop-Drawer/precache-manifest.98e4ff5bd6ba67d9c545a9421c0088e6.js",
+    "service-worker.js": "/REACT-Drag-Drop-Drawer/service-worker.js",
+    "static/css/main.13ea0245.chunk.css.map": "/REACT-Drag-Drop-Drawer/static/css/main.13ea0245.chunk.css.map",
+    "static/js/2.da997c78.chunk.js.LICENSE.txt": "/REACT-Drag-Drop-Drawer/static/js/2.da997c78.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3bc17e4d.js",
+    "static/js/2.da997c78.chunk.js",
+    "static/css/main.13ea0245.chunk.css",
+    "static/js/main.98d91da6.chunk.js"
+  ]
+}
