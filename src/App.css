@@ -1,0 +1,265 @@
+
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+
+/* CSS STARTED BY SHASHANK SEPTEMBER15TH 2020 */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+*{font-family: 'Montserrat', sans-serif !important;}
+
+
+body {
+    background-color: #fff !important;
+     font-family: 'Montserrat', sans-serif !important;
+}
+
+
+/* HEADER */
+header{margin-top:20px;}
+.MuiPaper-elevation1 {
+    /* box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2), 0px 1px 1px 0px rgba(0,0,0,0.14), 0px 1px 3px 0px rgba(0,0,0,0.12); */
+    box-shadow: 0 0 8px 1px rgba(32, 39, 51, 0.1) !important;
+    border-radius:15px !important;
+}
+
+.text-left{text-align: left;}
+.text-right{text-align: right;}
+.text-center{text-align: center;}
+.header nav ul {
+    list-style-type: none;
+   
+  }
+.header nav ul li {
+  float: left;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #202733;
+  margin: 0 20px;
+  padding-top: 5px;
+}
+.clients {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #202733;
+}
+.pull-left{float:left;}
+.pull-right{float:right}
+.headsearch{padding:20px}
+.width100{width:100%}
+img.brandlogo {
+    width: 170px;
+    height: 52px;
+    padding-top: 5px;
+}
+.cardheader{display: inline !important;}
+.card-bkico {
+    padding: 10px 5px;
+}
+.card-ico-btn {
+    float: right;
+    background: #7dcb29  !important;
+    color: #fff  !important;
+    box-shadow: none  !important;
+    border-radius: 30px !important;
+}
+
+.cardtitle {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px !important;
+  font-weight: 500 !important;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #202733 !important;
+}
+
+.cardsubtitle{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #202733;
+}
+
+.card-hr{
+  padding: 0 20px;
+    width: 82%;
+}
+
+.card-list-view span{ 
+  font-family: 'Montserrat', sans-serif;
+  font-size: 10px;
+  font-weight: 500 !important;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #202733;
+}
+
+.card-list-view p{  
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px !important;
+   font-weight: 500 !important;
+}
+.card-list-view .MuiAvatar-colorDefault{
+  background:transparent !important;
+  color:#000;
+}
+.header-user-rtgrid .MuiAvatar-root.MuiAvatar-circle.MuiAvatar-colorDefault {
+    margin-top: 8px;
+    float: right;
+}
+
+.themecyannbtn{background:#26cdd5 !important;color:#fff;border-radius: 21px !important;text-transform: capitalize !important;}
+.themegreenbtn{background:#7dcb29 !important;color:#fff;border-radius: 21px !important;text-transform: capitalize !important;}
+.marginauto{margin:0 auto !important;}
+.mb-10{margin-bottom:10px !important;}
+.mb-30{margin-bottom:30px !important;}
+.mt-10{margin-top:10px !important;}
+.mb-40{margin-bottom:40px !important;}
+.mt-0{margin-top:0px !important;}
+.mb-0{margin-bottom:0px !important;}
+.pt-10{padding-top:10px !important;}
+.pb-10{padding-bottom:10px !important;}
+.pb-0{padding-bottom:0 !important;}
+.pt-0{padding-top:0 !important;}
+
+
+.headsearch input{border-bottom:2px solid #979797;width:100%}
+.MuiTypography-colorTextSecondary {
+    color: #202733 !important;
+}
+.logincontainer {
+    max-width: 100% !important;
+}
+
+.logingridright{
+    /* height: 100vh; */
+    /* padding: 10vw 9em; */
+    position: fixed;
+    right: 0;
+    /* transform: scale(0.9); */
+    zoom:100%;
+    max-width: 500px;
+    width:80% !important;
+ }
+
+.logingridleft {
+    height: 100vh;
+    background: red;
+    /* position: fixed; */
+    left: 0;
+}
+.logingridleft img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+@media only screen and (max-width: 767px) {
+.logingridleft img {
+    height: 50vh;
+}
+}
+
+.login-title{
+    
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5vw;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #202733;
+}
+.loginbrand{width: 14vw;}
+
+.login-num-grid{    
+    width: 14vw;
+    margin-top: 2vw !important;
+    margin: auto;
+    }
+
+.login-num-grid button{  
+    box-shadow: 1px 1px 15px 5px rgba(0,0,0,0.15), 0 3px 6px rgba(0,0,0,0.15);
+    border: none;
+    height: 2vw;
+    width: 2vw;
+    padding: 0;
+    min-width: auto;
+    margin: 0.5vw 1vw;
+    color: #25d3c6;
+    font-weight: 600;
+    font-size: 0.9vw;
+}
+
+.loginbtn-box{
+    max-width: 16vw;
+    margin: 0 auto;
+}
+
+.loginbtn-box button{
+    padding: 0.4vw 1vw !important;
+    min-width: 10vw !important;
+    font-size: 1vw !important;
+    margin-top: 0.5vw !important;
+}
+

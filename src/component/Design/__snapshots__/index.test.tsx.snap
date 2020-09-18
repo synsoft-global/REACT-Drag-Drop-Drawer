@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should be rendered in the dom 1`] = `
+<main
+  className="MuiContainer-root MuiContainer-maxWidthXs"
+>
+  <div
+    className="makeStyles-container-1"
+  >
+    <div
+      className="makeStyles-containerItem-2"
+    >
+      <div
+        className="makeStyles-headerView-16"
+      >
+        <div
+          className="makeStyles-canvasHeader-18"
+        >
+           
+          Drag and Drop
+           
+        </div>
+      </div>
+      <div
+        className="DropTarget(TargetBox)-targetLeft-20 DropTarget(TargetBox)-containerItem-23"
+      >
+        <div
+          className="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-3 MuiGrid-item MuiGrid-grid-xs-12"
+        />
+      </div>
+      <div
+        className="makeStyles-floationgBtnCss-9"
+      >
+        <div
+          className="makeStyles-text-8 drawerButton"
+          onClick={[Function]}
+        >
+          +
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+`;
