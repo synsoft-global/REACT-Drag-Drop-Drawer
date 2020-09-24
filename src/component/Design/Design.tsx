@@ -9,21 +9,21 @@ const items = [
     name: "Table",
     group: "Furniture",
     image:
-      "https://i.pinimg.com/originals/7a/42/82/7a4282b44d0b6c5339088454cbc9f8da.png"
+      "https://i.pinimg.com/originals/7a/42/82/7a4282b44d0b6c5339088454cbc9f8da.png",
   },
   {
     id: "2",
     name: "Chair",
     group: "Furniture",
     image:
-      "https://i.pinimg.com/originals/76/10/7e/76107eeba9ec42f0fca5bb2a89222bee.jpg"
+      "https://i.pinimg.com/originals/76/10/7e/76107eeba9ec42f0fca5bb2a89222bee.jpg",
   },
   {
     id: "3",
     name: "Door",
     group: "Furniture",
     image:
-      "https://i.pinimg.com/originals/f3/1c/74/f31c74cfde7f2d95fc0d7293f775661d.jpg"
+      "https://i.pinimg.com/originals/f3/1c/74/f31c74cfde7f2d95fc0d7293f775661d.jpg",
   },
 
   {
@@ -31,22 +31,22 @@ const items = [
     name: "TV",
     group: "Electronics",
     image:
-      "https://images.samsung.com/is/image/samsung/levant-fhd-t5300-ua43t5300auxtw-frontblack-229857917?$PD_GALLERY_L_JPG$"
+      "https://images.samsung.com/is/image/samsung/levant-fhd-t5300-ua43t5300auxtw-frontblack-229857917?$PD_GALLERY_L_JPG$",
   },
   {
     id: "5",
     name: "Camera",
     group: "Electronics",
     image:
-      "https://images.unsplash.com/photo-1512790182412-b19e6d62bc39?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+      "https://images.unsplash.com/photo-1512790182412-b19e6d62bc39?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
   },
   {
     id: "6",
     name: "Mobile",
     group: "Electronics",
     image:
-      "https://images.samsung.com/is/image/samsung/p5/in/S20-pf-mo-1.jpg?$ORIGIN_JPG$"
-  }
+      "https://images.samsung.com/is/image/samsung/p5/in/S20-pf-mo-1.jpg?$ORIGIN_JPG$",
+  },
 ];
 
 /**
@@ -71,7 +71,7 @@ const items = [
 //   return <div onClick={onClose}>close</div>;
 // };
 
-export default function designRoot() {
+const DesignRoot = () => {
   // include for custom item wrapper
   // itemContainer={itemContainer}
 
@@ -99,4 +99,6 @@ export default function designRoot() {
       />
     </Container>
   );
-}
+};
+
+export default DesignRoot;

@@ -1,8 +1,8 @@
 // Canvas.test.js
 import React from "react";
 import renderer from "react-test-renderer";
-import DesignComponent from "./index";
-import Canvas from "./Canvas";
+import DesignComponent from "./Design";
+import Canvas from "./Canvas/Canvas";
 import { render } from "@testing-library/react";
 
 test("Should be rendered in the dom", () => {

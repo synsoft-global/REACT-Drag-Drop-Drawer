@@ -11,10 +11,10 @@ exports[`Should be rendered in the dom 1`] = `
       className="makeStyles-containerItem-2"
     >
       <div
-        className="makeStyles-headerView-16"
+        className="makeStyles-headerView-8"
       >
         <div
-          className="makeStyles-canvasHeader-18"
+          className="makeStyles-canvasHeader-10"
         >
            
           Drag and Drop
@@ -22,22 +22,23 @@ exports[`Should be rendered in the dom 1`] = `
         </div>
       </div>
       <div
-        className="DropTarget(TargetBox)-targetLeft-20 DropTarget(TargetBox)-containerItem-23"
+        className="DropTarget(TargetBox)-targetLeft-12 DropTarget(TargetBox)-containerItem-15"
       >
         <div
           className="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-3 MuiGrid-item MuiGrid-grid-xs-12"
         />
       </div>
       <div
-        className="makeStyles-floationgBtnCss-9"
+        className="makeStyles-floationgBtnCss-17"
       >
         <div
-          className="makeStyles-text-8 drawerButton"
+          className="undefined drawerButton"
           onClick={[Function]}
         >
           +
         </div>
       </div>
+      }
     </div>
   </div>
 </main>

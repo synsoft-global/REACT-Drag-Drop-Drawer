@@ -4,6 +4,9 @@ import { Grid } from "@material-ui/core";
 import { withStyles, WithStyles } from "@material-ui/core";
 import { Theme, createStyles } from "@material-ui/core/styles";
 
+/**
+ * Styles for view
+ */
 const useStyles = (theme: Theme) =>
   createStyles({
     paper: {
@@ -31,14 +34,14 @@ const useStyles = (theme: Theme) =>
       width: 60,
       height: 60,
     },
-	
-	containerItem: {
-    top: 100,
-    left: 30,
-    bottom: 0,
-    right: 0,
-    position: "absolute"
-  },
+
+    containerItem: {
+      top: 100,
+      left: 30,
+      bottom: 0,
+      right: 0,
+      position: "absolute",
+    },
     itemName: {
       textAlign: "center",
       marginRight: 20,
@@ -46,17 +49,29 @@ const useStyles = (theme: Theme) =>
     },
   });
 
+/**
+ * Interface for TargetBox props
+ */
 interface IProps extends WithStyles<typeof useStyles> {
+  /**
+   * Call this function inside render()
+   *  to let React DnD handle the drag events:
+   */
   connectDropTarget?: any;
+  /** Function called when item is dropped */
   onItemDrop?: any;
+  /** Item that is being dropped */
   droppedItem?: any;
+  /** location of the item */
   location: string;
 }
 
+/**
+ * Component to render drop box 
+ */
 class TargetBox extends React.Component<IProps> {
   render() {
     const { connectDropTarget, droppedItem, location } = this.props;
-    
     const classes: any = this.props.classes;
 
     return connectDropTarget(
@@ -91,6 +106,9 @@ const spec = {
   },
 };
 
+/**
+ * Specifies which props to inject into your component.
+ */
 function collect(connect: any, monitor: any) {
   return {
     connectDropTarget: connect.dropTarget(),

@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import DesignComponent from "./component/Design";
+import DesignComponent from "./component/Design/Design";
 
 function App() {
   return (

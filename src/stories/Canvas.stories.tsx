@@ -1,6 +1,6 @@
 import React from "react";
 import { Story, Meta } from "@storybook/react/types-6-0";
-import Canvas, { canvasProps } from "../component/Design/Canvas";
+import Canvas, { canvasProps } from "../component/Design/Canvas/Canvas";
 
 export default {
   title: "Canvas",
@@ -17,9 +17,9 @@ export default {
     closeButton: { control: { disable: true } },
   },
 };
-
 const Template: Story<canvasProps> = (args) => <Canvas {...args} />;
 
+// dummy items array 
 const items = [
   {
     id: "1",
@@ -66,6 +66,7 @@ const items = [
   },
 ];
 
+/** Canvas story with default props */
 export const Simple = Template.bind({});
 Simple.args = {
   location: "Left",

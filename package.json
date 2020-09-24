@@ -2,6 +2,7 @@
   "name": "ReactTest",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://synsoft-global.github.com/REACT-Drag-Drop-Drawer",
   "dependencies": {
     "@babel/plugin-syntax-flow": "^7.10.4",
     "@babel/preset-env": "^7.11.5",
@@ -43,7 +44,9 @@
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "test:generate-output": "jest --json --outputFile=.jest-test-results.json"
+    "test:generate-output": "jest --json --outputFile=.jest-test-results.json",
+    "predeploy": "npm run build-storybook",
+    "deploy": "gh-pages -d storybook-static"
   },
   "peerDependencies": {
     "react": ">=16.13.1",
@@ -73,6 +76,7 @@
     "@storybook/react": "^6.0.21",
     "@testing-library/jest-dom": "^4.2.4",
     "babel-loader": "^8.1.0",
+    "gh-pages": "^3.1.0",
     "react-is": "^16.13.1"
   },
   "jest": {

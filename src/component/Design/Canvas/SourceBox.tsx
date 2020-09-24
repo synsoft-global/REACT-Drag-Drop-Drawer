@@ -5,8 +5,7 @@ import { Theme, createStyles } from "@material-ui/core/styles";
 import { onEventTrigger } from "./Canvas";
 
 /**
- * Defining `IProps`
- * It will defines the structure of props
+ * Styles for view
  */
 const useStyles = (theme: Theme) =>
   createStyles({
@@ -15,7 +14,7 @@ const useStyles = (theme: Theme) =>
       textAlign: "center",
       color: theme.palette.text.secondary,
       marginRight: "5px",
-      marginTop: "5px"
+      marginTop: "5px",
     },
 
     imageBg: {
@@ -26,37 +25,47 @@ const useStyles = (theme: Theme) =>
       justifyContent: "center",
       marginRight: 20,
       marginBottom: 10,
-      display: "flex"
+      display: "flex",
     },
 
     imgCss: {
       width: 60,
-      height: 60
+      height: 60,
     },
 
     itemName: {
       textAlign: "center",
       marginRight: 20,
-      marginBottom: 10
-    }
+      marginBottom: 10,
+    },
   });
 
+/**
+ * Interface for SourceBox props
+ */
 interface IProps extends WithStyles<typeof useStyles> {
+  /** The node unique key */
   id: any;
+  /** The data to be used in node */
   itemData: any;
+  /** Whether or not drag is enabled */
   isReady: boolean;
+  /** Function to be called when item is dragged */
   onItemDrag: Function;
+  /** Function to connect drag source */
   connectDragSource?: any;
+  /** Style to be used in item container */
   itemContainerStyle?: any;
 }
 
+/** Component to render dragable item */
 const SourceBox = (props: IProps) => {
   const {
     connectDragSource,
     itemData,
     id,
     classes,
-    itemContainerStyle
+    itemContainerStyle,
   } = props;
 
   /**
@@ -109,22 +118,40 @@ const SourceBox = (props: IProps) => {
   );
 };
 
+/**
+ * The collecting function. It should return a plain object of the props to inject into your component
+ * @param connect 
+ * @param monitor 
+ */
 function collect(connect: any, monitor: any) {
   return {
-    connectDragSource: connect.dragSource()
+    connectDragSource: connect.dragSource(),
   };
 }
 
+/**
+ * Specifies the drag source contract.
+ * Only `beginDrag` function is required.
+ */
 const cardSource = {
+  /**
+   * When the dragging starts, beginDragis called. You must return a plain JavaScript object describing the data being dragged
+   * @param props 
+   * @param monitor 
+   * @param component 
+   */
   beginDrag(props: any, monitor: any, component: any) {
+    // Return the data describing the dragged item
     const item = props.itemData;
     props.onItemDrag(item);
     return item;
   },
+  
+  /** When the dragging stops, endDragis called */
   canDrag(props: any) {
     // You can disallow drag based on props
     return props.isReady;
-  }
+  },
 };
 
 export default withStyles(useStyles)(
